@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#23295e"><meta name="apple-mobile-web-app-title" content="암기북">
+<title>공공조달관리사 암기북</title>
+<style>
+:root{--bg:#f4f6fa;--card:#fff;--ink:#1d2340;--sub:#5b6383;--line:#dde2ee;--pri:#23295e;--acc:#3b5bdb;--ok:#2f9e44;--bad:#e03131;--soft:#eef1fb;--hl:#fff3bf}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#11141f;--card:#1a1e2d;--ink:#e6e9f5;--sub:#9aa2c0;--line:#2c3247;--pri:#9fb0ff;--acc:#7c93ff;--soft:#232945;--hl:#4a3f12}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Pretendard","Apple SD Gothic Neo","Malgun Gothic",sans-serif;line-height:1.6}
+header{position:sticky;top:0;z-index:5;background:#23295e;color:#fff;padding:10px 16px}
+header h1{font-size:16px;margin:0 0 6px}
+.tabs{display:flex;gap:6px;flex-wrap:wrap}
+.tabs button{font:inherit;border:0;border-radius:8px;padding:6px 12px;cursor:pointer;background:rgba(255,255,255,.15);color:#fff}
+.tabs button.on{background:#fff;color:#23295e;font-weight:700}
+main{max-width:980px;margin:0 auto;padding:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;margin-bottom:14px}
+h2{font-size:18px;margin:4px 0 10px}
+h3{font-size:15px;margin:14px 0 6px}
+table{width:100%;border-collapse:collapse;font-size:14px;margin:6px 0}
+th,td{border:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+th{background:var(--soft)}
+.tip{background:var(--soft);border-left:4px solid var(--acc);padding:8px 12px;border-radius:6px;font-size:14px;margin:8px 0}
+b.n{background:var(--hl);padding:0 3px;border-radius:3px}
+.hide{display:none!important}
+.tbl-wrap{overflow-x:auto}
+/* flash */
+.fc-top{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:10px}
+select,button.b{font:inherit;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:8px;padding:7px 12px;cursor:pointer}
+button.pri{background:var(--acc);color:#fff;border-color:var(--acc)}
+.fc{min-height:220px;display:flex;flex-direction:column;justify-content:center;cursor:pointer;user-select:none}
+.fc .q{font-size:18px;font-weight:600;white-space:pre-line}
+.fc .a{margin-top:14px;padding-top:12px;border-top:1px dashed var(--line);font-size:16px;white-space:pre-line}
+.fc .a b{color:var(--acc)}
+.meta{font-size:13px;color:var(--sub);margin-bottom:6px}
+.row{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:6px}
+.ok{background:var(--ok)!important;color:#fff!important;border-color:var(--ok)!important}
+.no{background:var(--bad)!important;color:#fff!important;border-color:var(--bad)!important}
+.bar{height:6px;background:var(--line);border-radius:9px;overflow:hidden;margin:6px 0 2px}
+.bar i{display:block;height:100%;background:var(--ok)}
+</style>
+</head>
+<body>
+<header>
+  <h1><a href="./" style="color:inherit;text-decoration:none">🏠</a> 공공조달관리사 암기북 · 핸드북 27개 + 모의고사 5~7회 숫자</h1>
+  <div class="tabs">
+    <button data-t="sum" class="on">핵심 요약</button>
+    <button data-t="num">숫자 총정리</button>
+    <button data-t="fc">플래시카드</button>
+  </div>
+</header>
+<main>
+
+<!-- ================= 핵심 요약 ================= -->
+<section id="sum">
+<div class="card">
+  <h2>먼저 어느 거래인지 가르기</h2>
+  <table><tr><th>용역</th><th>MAS</th><th>공사</th></tr>
+  <tr><td>무엇을 제안하고 어떻게 평가할까</td><td>누가 공급자 풀에 들어와 실제 구매에서 경쟁할까</td><td>어떤 법령·금액·시설로 참가와 낙찰을 정할까</td></tr></table>
+  <div class="tip">거래 종류를 먼저 정하고 → 금액과 조건으로 다음 절차를 고른다.</div>
+</div>
+
+<div class="card">
+  <h2>3-3-1 용역계약</h2>
+  <h3>사전규격공개 기간</h3>
+  <table><tr><th>장면</th><th>기간</th></tr>
+  <tr><td>일반</td><td><b class="n">5일</b></td></tr><tr><td>긴급</td><td><b class="n">3일</b> 이상</td></tr>
+  <tr><td>SW사업(추정가격+부가세 5억 이상, 기획·운영·유지관리 제외)</td><td><b class="n">10일</b></td></tr>
+  <tr><td>외자구매</td><td>7일</td></tr>
+  <tr><td>지방계약 의견 처리</td><td>받은 날부터 <b class="n">14일</b> 이내 (계약심의위 심의대상이면 <b class="n">50일</b>)</td></tr></table>
+
+  <h3>2단계 경쟁 vs 규격·가격 동시입찰</h3>
+  <table><tr><th>구분</th><th>제출</th><th>가격 개봉 조건</th></tr>
+  <tr><td>2단계 경쟁</td><td>규격심사 뒤 가격입찰</td><td>규격 적격자 <b class="n">2인 이상</b></td></tr>
+  <tr><td>동시입찰</td><td>두 봉투 함께</td><td>최초 2인 이상 유효입찰이면 적격 <b class="n">1인도 개봉</b> 가능</td></tr></table>
+
+  <h3>제안서 평가 방식(오프라인 원칙)</h3>
+  <table><tr><th>대상</th><th>기준</th></tr>
+  <tr><td>일반평가</td><td><b class="n">20억</b> 이상</td></tr><tr><td>SW 유지관리</td><td><b class="n">100억</b> 이상</td></tr><tr><td>실물모형(Mock-up) 발표</td><td><b class="n">10억</b> 이상</td></tr></table>
+
+  <h3>협상계약 vs 경쟁적 대화</h3>
+  <table><tr><th></th><th>협상계약</th><th>경쟁적 대화</th></tr>
+  <tr><td>장면</td><td>요구사항 확정, 제안 비교 가능</td><td>발주기관도 해법 확정 어려움</td></tr>
+  <tr><td>진행</td><td>제안서 평가 → 우선협상대상자 협상</td><td>기본제안서 → 2인 이상 선정 → 각 2회 이상 대화 → 최종제안서</td></tr>
+  <tr><td>숫자</td><td>협상적격자: 기술 배점 <b class="n">85%</b> 이상 + 예정가격(작성 시) 이하<br>동점: 기술점수 높은 자 → 배점 큰 세부항목<br>협상기간 15일 / 성립 후 <b class="n">10일</b> 이내 계약</td><td>공고 <b class="n">40일</b> 전, 재공고·긴급 <b class="n">10일</b> 전<br>기술 90 · 가격 10</td></tr></table>
+  <div class="tip">가격협상: 기준가격 = 제안가격. 기술협상으로 가감된 내용 상당액만 조정, 상한은 사업예산(예정가격 작성 시 예정가격).</div>
+
+  <h3>용역 적격심사 통과점수</h3>
+  <table><tr><th>용역</th><th>점수</th></tr>
+  <tr><td>여객 육상운송 · 중기간 경쟁제품 SW</td><td><b class="n">88점</b></td></tr>
+  <tr><td>화물 육상운송 · 그 밖의 일반용역</td><td><b class="n">85점</b></td></tr></table>
+  <div class="tip">별도 PQ 시행 기술용역은 PQ점수를 적격심사에 환산. 구 e-발주시스템은 2025.1.6 통합 나라장터로 통합.</div>
+</div>
+
+<div class="card">
+  <h2>3-3-2 다수공급자계약(MAS)</h2>
+  <div class="tip">여러 공급자와 먼저 계약 → 공급자 풀 → 수요기관 선택 → 기준금액 이상이면 2단계경쟁. 계약기간 원칙 <b class="n">3년</b>.</div>
+  <h3>물품 MAS 9단계</h3>
+  <table><tr><td>① 구매계획 수립</td><td>④ 적격성평가 결과통보</td><td>⑦ 가격협상</td></tr>
+  <tr><td>② 구매결의·구매공고</td><td>⑤ 가격자료 제출</td><td>⑧ 계약체결</td></tr>
+  <tr><td>③ 적격성평가 신청</td><td>⑥ 협상기준가격 작성</td><td>⑨ 상품정보 등록요청</td></tr></table>
+  <p>용역 MAS: 적격성평가 → 가격협상 → 계약체결 → 납품요구 → 계약관리 (물품=상품 등록·구매 / 용역=서비스 수행·사후관리)</p>
+
+  <h3>적격성 평가(사전심사)</h3>
+  <table><tr><th>대상</th><th>거래실적</th><th>업체 수</th></tr>
+  <tr><td>물품 일반</td><td>연 <b class="n">3천만</b> 이상</td><td><b class="n">3개사</b> 이상</td></tr>
+  <tr><td>NEP·NET</td><td>연 <b class="n">2천만</b> 이상</td><td><b class="n">2개사</b> 이상</td></tr>
+  <tr><td>AI 제품</td><td>실적 무관</td><td>세부품명 2개사 이상</td></tr>
+  <tr><td>용역</td><td colspan="2">거래실적 또는 대체 가능성 3개사 이상 중 하나</td></tr></table>
+
+  <h3>2단계경쟁</h3>
+  <table>
+  <tr><td>대상 금액</td><td>일반 물품·일반용역 <b class="n">5천만</b> / 중기간 물품·용역 <b class="n">1억</b> 이상</td></tr>
+  <tr><td>요청·마감</td><td>기본 <b class="n">5인</b> 이상 / 물품 만 5일 이상, 용역 만 5일 이후(토·공휴일·근로자의 날 제외)</td></tr>
+  <tr><td>분할 회피</td><td>최근 <b class="n">30일</b> 분할 요구액 합산</td></tr>
+  <tr><td>가격 하한</td><td>중기간 제품은 계약가격의 <b class="n">90%</b> 미만 제안 금지</td></tr>
+  <tr><td>동점</td><td>물품 = 품질관리 / 용역 = 사후관리 점수 우선</td></tr></table>
+  <div class="tip">2단계경쟁 선정 업체라도 종합쇼핑몰 미등재(계약종료·거래정지·수정계약)면 유효기간 내라도 납품요구 불가 → 새 제안요청.</div>
+
+  <h3>계약이행실적 평가 · 차기계약 배제</h3>
+  <table><tr><td>종료일 기준 직전 2회 이상 연속 총점 미흡</td><td>계약종료 후 <b class="n">1년</b> 차기계약 배제</td></tr>
+  <tr><td>용역: 해당 세부품명 과거 3년 대금지급 완료 실적 없음</td><td>차기계약 배제 (단, 최근 3년 총 계약기간 1년 6개월 미만이면 제외)</td></tr></table>
+  <p>합병 → 소멸회사 실적 전체 이관 / 분할·사업양수도 → 해당 세부품명 실적만 이관. 일시적 생산중단(공장이전) → 판매중지.</p>
+
+  <h3>카탈로그계약(용역)</h3>
+  <table><tr><th>구매예산</th><th>제안요청</th><th>선정</th></tr>
+  <tr><td>2천만 미만</td><td>1인</td><td>1인 제안</td></tr>
+  <tr><td>2천만~5천만 미만</td><td>2인 이상</td><td>일반 <b class="n">88%</b> · 중기간 용역 <b class="n">90%</b> 이상 견적 중 최저</td></tr>
+  <tr><td>5천만 이상</td><td>5인 이상</td><td>제안평가</td></tr></table>
+  <p>디지털서비스: 조달청이 카탈로그 검토·계약 → 수요기관이 제안요청 → 제안서 평가 → 협상 → 납품요구. 별표1 예시는 기준별 적정·부적정 판단.</p>
+</div>
+
+<div class="card">
+  <h2>3-4 공사계약</h2>
+  <h3>종합공사 vs 전문공사</h3>
+  <table><tr><th></th><th>종합공사</th><th>전문공사</th></tr>
+  <tr><td>범위</td><td>시설물 전체</td><td>시설물 일부·전문분야</td></tr>
+  <tr><td>방식</td><td>종합 계획·관리·조정</td><td>해당 기술·공종 중심</td></tr>
+  <tr><td>업종</td><td>토목·건축·토목건축·산업환경설비·조경 <b class="n">5업종</b></td><td>전문업종·주력분야</td></tr></table>
+  <p>발주 판단 순서: <b>공사 내용 확인 → 종합 관리·조정 필요성 → 종합/전문 구분 → 등록업종 확인</b>. 전기·정보통신·소방은 개별법(건산법 건설공사에서 제외).<br>
+  건설엔지니어링 = 위탁받은 건설기술 업무(감리·품질관리·안전점검 등), 시공·보수·철거 제외 → 용역으로 발주.<br>
+  상호시장 진출 허용 공사는 주력분야를 입찰참가자격으로 요구하지 않음.</p>
+
+  <h3>공사 입찰공고 기한</h3>
+  <table><tr><th>조건</th><th>세부</th><th>기한</th></tr>
+  <tr><td>현장설명 없음</td><td>10억 미만 / 10억~50억 미만 / 50억 이상</td><td>마감 전일부터 <b class="n">7 / 15 / 40일</b> 전</td></tr>
+  <tr><td>현장설명 있음</td><td>일반공사 / PQ 대상</td><td>현장설명일 전일부터 <b class="n">7 / 30일</b> 전</td></tr>
+  <tr><td>긴급·재공고</td><td>금액 무관</td><td>마감 <b class="n">5일</b> 전</td></tr></table>
+  <p>50억 이상 공사의 현장설명은 마감 전일부터 33일 전 실시. 물품·용역 일반 입찰공고는 7일.</p>
+
+  <h3>낙찰자 결정방법</h3>
+  <table><tr><th>법령</th><th>미만</th><th>이상</th></tr>
+  <tr><td>국가계약</td><td><b class="n">100억</b> 미만 적격심사</td><td>100억 이상 종합심사낙찰제</td></tr>
+  <tr><td>지방계약</td><td><b class="n">300억</b> 미만 적격심사</td><td>300억 이상 종합평가낙찰제</td></tr></table>
+
+  <h3>PQ(입찰참가자격 사전심사) 대상</h3>
+  <table><tr><td>일반공사</td><td><b class="n">300억</b> 이상</td></tr><tr><td>특정시설</td><td><b class="n">200억</b> 이상</td></tr>
+  <tr><td>교량</td><td>경간 50m 이상 또는 길이 500m 이상</td></tr><tr><td>터널</td><td>200억 이상 조건 함께 확인</td></tr></table>
+  <div class="tip">PQ = 가격입찰 <b>전</b> 참가자 선별(문지기). 적격심사 = 가격입찰 <b>뒤</b> 최저가자부터 이행능력 심사. PQ 경영상태는 신용평가등급으로, 경영상태 적격 후 기술능력 90점 이상이면 적격.</div>
+
+  <h3>공사 적격심사 통과점수</h3>
+  <table><tr><td>국가 100억 미만</td><td><b class="n">95점</b></td></tr><tr><td>지방 100억 미만</td><td><b class="n">95점</b></td></tr><tr><td>지방 100억~300억 미만</td><td><b class="n">92점</b></td></tr></table>
+  <p>100억 미만 공사: 순공사원가(재료비·노무비·경비+부가세)의 <b class="n">98%</b> 미만 입찰자는 심사 제외. 미달하면 차순위 심사(재입찰 아님).</p>
+
+  <h3>계약금액 조정</h3>
+  <table><tr><th>원인</th><th>판단</th><th>기준</th></tr>
+  <tr><td>전체 물가 변동</td><td>물가변동 조정</td><td><b class="n">90일</b> 이상 · <b class="n">3%</b> 이상, 조정기준일 전 선금 공제, 품목/지수 중 계약 때 정한 하나</td></tr>
+  <tr><td>특정 자재 급등</td><td>단품슬라이딩</td><td>순공사원가 <b class="n">0.5%</b> 초과 · 가격 <b class="n">15%</b> 이상 · 90일</td></tr>
+  <tr><td>발주기관 설계변경</td><td>비목 단가 조정</td><td>정부 요구 신규비목: 당시단가 ~ 당시단가×낙찰률 범위에서 협의</td></tr></table>
+  <p>일괄입찰 대형공사: 정부 책임(사업계획 변경 등)·불가항력 외에는 설계변경해도 증액 불가.</p>
+
+  <h3>종합심사낙찰제</h3>
+  <table><tr><td>균형가격</td><td>부적정 제외 후 산술평균. 유효 10~20개: 상위 40%·하위 10% 제외 / 10개 미만: 상위 50%·최하위 1개 / 20개 초과: 상·하위 20%</td></tr>
+  <tr><td>동점</td><td>① 공사수행능력+사회적책임 합산 → ② 균형가격 근접(균형가격이 예정가격 88% 이상이면 저가) → ③ 공사수행능력 … → 추첨</td></tr>
+  <tr><td>입찰금액 분야</td><td>단가·하도급계획·물량·시공계획 심사 (하도급계획 감점 → 입찰금액점수)</td></tr>
+  <tr><td>고난도 공사</td><td>공고에서 정한 수를 최고점순 선정 → 통보일부터 15일 이내 물량·시공계획서 제출 → 심사위원회 심사</td></tr>
+  <tr><td>배치기술자 교체</td><td>원칙 불가. 예외: 사망·퇴직, 질병·출산, 3년 이상+공정률 50% 초과 등. 승인 + 당초 점수 이상</td></tr>
+  <tr><td>건설기술용역</td><td>기본설계 <b class="n">30억</b> 이상 / 실시설계 <b class="n">40억</b> 이상</td></tr></table>
+
+  <h3>기술형 입찰(일괄·대안·기술제안)</h3>
+  <p>기본계획 → 입찰방법 심의 → 안내서·공고 → 설계심의 → 낙찰자 선정<br>
+  가격÷설계점수는 <b>낮을수록</b>, 설계점수÷가격은 <b>높을수록</b> 유리. 설계보상비 한도: 일괄·대안 <b class="n">20/1000</b>, 기술제안 <b class="n">10/1000</b>.<br>
+  대안 요건: 원안과 함께 제출 · 기본방침 유지 · 기능·효과 동등 이상 · 가격 낮음 · 공기 초과 금지.</p>
+
+  <h3>시공관리 · 대금</h3>
+  <table><tr><td>선금</td><td>청구일부터 <b class="n">14일</b> 이내 (보완 시 보완서류 제출일부터)</td></tr>
+  <tr><td>기성·준공대가</td><td>청구일부터 <b class="n">5일</b> 이내 (검사 전 미리 청구 시 검사완료일부터 5일)</td></tr>
+  <tr><td>시공평가</td><td>총공사비 <b class="n">100억</b> 이상 · 시공업체 능력 평가</td></tr>
+  <tr><td>사후평가</td><td>총공사비 <b class="n">300억</b> 이상 · 예상 vs 실제 효과 비교</td></tr></table>
+
+  <h3>기술용역 절차</h3>
+  <p>PQ 적용: 계약요청 → 방법결정 → 공고 → <b>PQ 참가자 선별</b> → 가격입찰 → 적격심사 → 낙찰<br>
+  종합심사 9단계: 계약요청 → 계약방법 결정 → 입찰공고 → 필요 시 과업설명 → 이행능력평가 → 가격·제안서 제출 → 제안서평가 → 기술·가격 종합심사 → 낙찰자 결정<br>
+  SOQ/TP: 수행실적 등 <b class="n">90점</b> 이상이 평가서 제출 → 평가서 <b class="n">85점</b> 이상이 입찰참가적격자.</p>
+
+  <h3>하도급관리</h3>
+  <table><tr><th></th><th>직접 지급</th><th>지급 정지</th></tr>
+  <tr><td>원인</td><td>확정판결·파산·부도·영업정지·지급보증서 미제출 등</td><td>하수급인의 임금·자재대금 체불</td></tr>
+  <tr><td>요청·입증</td><td>하수급인 보호</td><td>계약상대자가 객관적으로 입증·요청</td></tr>
+  <tr><td>결과</td><td>발주기관 → 하수급인</td><td>직접 지급하지 않을 수 있음</td></tr></table>
+  <p>하수급인 선금 배분: 받은 날부터 <b class="n">15일</b> 이내. 하도급지킴이: 발주기관 → 계약상대자 → 하수급인·근로자·자재장비업자. 도급 <b class="n">3천만 미만</b> 또는 공기 <b class="n">30일 이내</b>면 의무 제외. 자동생성계좌 기능 있으면 약정계좌 별도 등록 불필요.<br>
+  참여제한 중 하수급인·부적정 심사 → 발주자가 <b>수급인</b>에게 변경 요구. 3자 직접지급 합의 → 그 범위만큼 두 채무 함께 소멸.<br>
+  재하도급: 종합업종 하수급인이 전문공사를 전문업종에 → <b>발주자</b> 서면 승낙 / 전문업종 하수급인 일부 → 수급인 서면 승낙.</p>
+</div>
+</section>
+
+<!-- ================= 숫자 총정리 ================= -->
+<section id="num" class="hide">
+<div class="card">
+  <h2>헷갈리는 숫자 한 장 정리 (모의고사 5~7회 해설 기준)</h2>
+  <div class="tbl-wrap"><table>
+  <tr><th>주제</th><th>숫자</th></tr>
+  <tr><td>보증금</td><td>입찰보증금 <b class="n">5%</b> · 계약보증금 <b class="n">10%</b> · 공사이행보증서 <b class="n">40%</b> · 지체상금 상한 <b class="n">30%</b> · 담합자 집행정지 낙찰 시 추가 계약보증금 10%</td></tr>
+  <tr><td>지체상금률(1일)</td><td>공사 <b class="n">0.5/1000</b> · 물품 <b class="n">0.75/1000</b> · 용역 <b class="n">1.25/1000</b> (검사·인수한 기성·기납부분 공제)</td></tr>
+  <tr><td>지체일수</td><td>기한 내 납품 → 검사기간 제외 / 기한 후 납품 → 기한 다음 날~검사 합격일 전부(발주기관 책임 지연은 제외)</td></tr>
+  <tr><td>하자보수보증금률</td><td>철도·댐·터널·교량·조경 <b class="n">5%</b> · 공항·항만·삭도·방파제·사방·간척 <b class="n">4%</b> · 도로·하천·일반건축 <b class="n">3%</b> · 기타 <b class="n">2%</b></td></tr>
+  <tr><td>선금</td><td>최초 <b class="n">40%</b> 기준, 총액 상한 <b class="n">70%</b> / 계약상대자 귀책 해지 → 약정이자 가산(반환 때까지 매일 잔액) / 발주기관 사정 해지 → 이자 없음, 미지급 기성·철수비용 14일 이내 지급</td></tr>
+  <tr><td>검사</td><td>통지일부터 <b class="n">14일</b>(재난 고시 시 7일), 100억 이상 공사 7일 연장 / 시정 요구 시 시정 완료 통지일부터 다시 계산</td></tr>
+  <tr><td>착공·공정</td><td>공기 30일 미만이면 착공신고서 생략 가능 / 실행공정률 <b class="n">10%p</b> 이상 지연 또는 1개월 이상 중단 → 시공계획서</td></tr>
+  <tr><td>수량 변경(물품)</td><td>10% 범위는 담당자, 초과는 계약상대자 동의</td></tr>
+  <tr><td>소액수의(물품)</td><td>일반 2천만 · 청년창업 5천만 · 소기업·소상공인·여성·장애인기업 1억 이하 / 5천만 초과는 전자조달 2인 이상 견적 + 3일 안내공고</td></tr>
+  <tr><td>견적 배제</td><td>불응·포기: 마감일 기준 3개월·해당 중앙관서 / 담합·위조 처분: 공고일 기준 6개월</td></tr>
+  <tr><td>우선구매 목표</td><td>중증장애인생산품 <b class="n">1.1%</b> · 장애인기업 <b class="n">1%</b> · 여성기업 물품·용역 <b class="n">5%</b>, 공사 <b class="n">3%</b>(각 구매총액 기준)</td></tr>
+  <tr><td>통보·인증</td><td>사회적기업(고용노동부) 계획·실적 <b class="n">2월 말</b>, 종합 공고 4월 30일 / 여성기업 구매계획 개선권고: 중기부장관</td></tr>
+  <tr><td>제재</td><td>입찰참가자격 제한 최대 <b class="n">2년</b>, 종료 후 6개월 내 재처분 1/2 가중(상한 2년), 담합 주도는 과징금 대체 불가 / 조세포탈 유죄 확정 후 2년 참가 제한</td></tr>
+  <tr><td>전자조달</td><td>이용승인 제한: 최근 <b class="n">3년</b> 내 처벌 / 하도급 전자처리: 예산 250억 미만 기타공공기관 제외</td></tr>
+  <tr><td>조달청 공사원가 사전검토</td><td>지자체 추정가격 <b class="n">100억</b> 이상 (30억=종합공사 조달청 요청, 3억=전문공사 등)</td></tr>
+  <tr><td>본점소재지 제한</td><td>전문공사 10억 미만 가능, 시·도 자격자 10인 미만이면 인접 시·도 포함</td></tr>
+  <tr><td>지역의무공동도급</td><td>고시금액 미만, 지역업체 1인 이상(계열회사 불가), 자격자 10인 미만이면 면제</td></tr>
+  <tr><td>복수예비가격</td><td>15개 중 다빈도 <b class="n">4개</b> 산술평균 / 예정가격 기준: 거래실례 → 원가계산 → 표준시장단가 → 감정·견적</td></tr>
+  <tr><td>목록정보</td><td>품목 10년 이상 미사용 시 삭제 가능 / 지능형 검색 반영 약 30분 / 분류: 용도·기능 → 공정·제조업체 → 재료</td></tr>
+  <tr><td>벤처나라</td><td>창업기업 = 창업 후 <b class="n">7년</b> 이내 (지정 유효기간 6년)</td></tr>
+  <tr><td>공기업 출자회사</td><td>공기업·준정부기관 지분 합산 50% 이상, 설비 유지관리 사유 수의계약엔 퇴직자 제한 미적용</td></tr>
+  </table></div>
+</div>
+<div class="card">
+  <h2>헷갈리는 짝 구분</h2>
+  <table>
+  <tr><td>회피 vs 제척</td><td>회피 = 위원 스스로 알리고 빠짐(최근 3년 내 재직 등) / 제척 = 규정이 배제</td></tr>
+  <tr><td>입법예고 vs 행정예고</td><td>법령 제·개정 = 입법예고 / 정책·제도·계획 = 행정예고 (누구든지 의견 제출)</td></tr>
+  <tr><td>위험 전가 vs 회피</td><td>보험 등 제3자에 넘김 = 전가 / 활동 중단·방식 변경 = 회피 / 외부와 나눔 = 공유</td></tr>
+  <tr><td>SC vs SCP</td><td>SC = 중단 없는 자재 흐름 자체 / SCP = 외부 충격에도 공급 지속되게 하는 방안</td></tr>
+  <tr><td>선급금 vs 선지급금</td><td>선급금 = 발주자가 착수 전 지급 / 선지급금 = 기성금 받기 전 수급인·하수급인이 자재·장비대금 등으로 먼저 지급</td></tr>
+  <tr><td>OGC 전자적 소싱 vs 구매</td><td>소싱 = 공급업체 DB·전자입찰·평가·협상 / 구매 = 전자구매·지불·구매카드·전자송장</td></tr>
+  <tr><td>중앙집중형 vs 분산형</td><td>중앙 = 규모의 경제·표준 절차(복잡·지연, 고객화 저하) / 분산 = 신속·고객화(효율·안정성 저하)</td></tr>
+  <tr><td>민법 vs 조달물자 하자책임</td><td>민법 = 무과실책임·안 날부터 6개월 / 조달물자 = 무과실 입증 시 면책·계약서 하자기간, 고의·중과실은 기간 불문</td></tr>
+  <tr><td>계약 해석 우선</td><td>특수조건 > 일반조건, 합의 수기 문구 > 기본 문서 / 부당특약은 무효</td></tr>
+  <tr><td>공급 일반절차 7단계</td><td>수요 제기 → 구매 계획 → 수요 상세화 → 공급자 발굴 → 공급자 선정 → 계약 체결 → 계약 관리</td></tr>
+  </table>
+</div>
+</section>
+
+<!-- ================= 플래시카드 ================= -->
+<section id="fc" class="hide">
+<div class="card">
+  <div class="fc-top">
+    <select id="fcSet"><option value="all">전체</option><option value="핸드북">핸드북 반복문제</option><option value="모의고사">모의고사 숫자</option></select>
+    <select id="fcMode"><option value="all">모든 카드</option><option value="no">모르는 카드만</option></select>
+    <button class="b" id="fcShuffle">섞기</button>
+    <button class="b" id="fcReset">기록 초기화</button>
+  </div>
+  <div class="bar"><i id="fcBar" style="width:0"></i></div>
+  <div class="meta" id="fcStat"></div>
+</div>
+<div class="card fc" id="fcCard">
+  <div class="meta" id="fcMeta"></div>
+  <div class="q" id="fcQ"></div>
+  <div class="a hide" id="fcA"></div>
+  <div class="meta" id="fcHint" style="margin-top:12px">카드를 누르면(또는 스페이스) 정답이 보여요</div>
+</div>
+<div class="row">
+  <button class="b" id="fcPrev">◀ 이전</button>
+  <button class="b no" id="fcNo">모름 (1)</button>
+  <button class="b ok" id="fcOk">외움 (2)</button>
+  <button class="b" id="fcNext">다음 ▶</button>
+</div>
+</section>
+</main>
+
+<script>
+// [세트, 질문, 정답, 근거]
+const C=[
+["핸드북","요구사항이 확정되어 제안서 평가 뒤 우선협상대상자와 협상 / 해결책을 확정하기 어려워 대화 뒤 최종제안서","협상에 의한 계약 / 경쟁적 대화에 의한 계약","3-3-1-5"],
+["핸드북","경쟁적 대화 진행 순서는?","기본제안서 제출 → 대화 참여자 2인 이상 선정 → 각 2회 이상 대화 → 최종 규격·가격 제안서","3-3-1-5"],
+["핸드북","최초 2인 이상 유효입찰 후 규격적격자 1인: 2단계 경쟁 / 동시입찰에서 가격 개봉 가능?","2단계 경쟁 × / 동시입찰 ○","3-3-1-3"],
+["핸드북","용역 적격심사 통과점수: 여객 육상운송 / 중기간 SW / 화물 육상운송 / 그 밖의 일반용역","88 / 88 / 85 / 85","3-3-1-6"],
+["핸드북","별도 PQ를 시행한 기술용역의 PQ점수는 어디에 환산?","적격심사","3-3-1-6"],
+["핸드북","사전규격공개 기간: 일반 / 긴급 / 5억 이상 SW사업","5일 / 3일 이상 / 10일","3-3-1-1"],
+["핸드북","오프라인 평가 원칙: 일반평가 / SW 유지관리 / 실물모형 발표","20억 / 100억 / 10억 이상","3-3-1-4"],
+["핸드북","MAS 구매 흐름 4단계","여러 공급자와 선 계약 → 공급자 풀 형성 → 수요기관 선택 → 기준금액 이상이면 2단계경쟁","3-3-2-1"],
+["핸드북","물품 MAS 9단계","구매계획 → 구매결의·공고 → 적격성평가 신청 → 결과통보 → 가격자료 제출 → 협상기준가격 작성 → 가격협상 → 계약체결 → 상품정보 등록요청","3-3-2-2"],
+["핸드북","용역 MAS 절차 5단계","적격성평가 → 가격협상 → 계약체결 → 납품요구 → 계약관리","3-3-2-2"],
+["핸드북","MAS 적격성: 물품 일반 / NEP·NET / AI 제품의 거래실적·업체수","3천만·3개사 / 2천만·2개사 / 실적 무관·세부품명 2개사","3-3-2-3"],
+["핸드북","MAS 2단계경쟁 대상 금액: 일반 물품·용역 / 중기간","5천만 원 / 1억 원 이상","3-3-2-4"],
+["핸드북","2단계경쟁 기본 제안요청 인원과 제안마감","5인 이상 / 물품 만 5일 이상, 용역 만 5일 이후(토·공휴일·근로자의 날 제외)","3-3-2-4"],
+["핸드북","분할 납품요구 합산 기간은?","최근 30일","3-3-2-4"],
+["핸드북","계약가격 100만 원 중기간 제품을 88만 원에 제안 가능?","× (계약가격 90% 미만 제안 금지)","3-3-2-4"],
+["핸드북","2단계경쟁 동점 시 우선 비교: 물품 / 용역","품질관리 점수 / 사후관리 점수","3-3-2-4"],
+["핸드북","직전 2회 이상 연속 총점 미흡 시 차기계약 배제 기간","계약종료 후 1년","3-3-2-5"],
+["핸드북","카탈로그계약: 2천만 미만 / 2천만~5천만 미만 / 5천만 이상","1인 제안 / 2인 이상, 일반 88%·중기간 90% 이상 최저 / 5인 이상 제안평가","3-3-2-6"],
+["핸드북","시설물 전체 종합 관리 / 일부 전문 시공 / 조사·설계 사업관리 외부 위탁","종합공사 / 전문공사 / 건설엔지니어링","3-4-1"],
+["핸드북","건설공사 발주 판단 4단계","공사 내용 확인 → 종합 관리·조정 필요성 판단 → 종합·전문 구분 → 등록업종 확인","3-4-1-3"],
+["핸드북","공사 공고기한: 현장설명 없음(10억 미만/10~50억/50억 이상)","7일 / 15일 / 40일 전 (입찰서 마감 전일부터)","3-4-2-1"],
+["핸드북","공사 공고기한: 현장설명 있음(일반/PQ), 긴급·재공고","현장설명일 7일 / 30일 전, 긴급·재공고 마감 5일 전","3-4-2-1"],
+["핸드북","낙찰방식: 국가 100억 미만/이상, 지방 300억 미만/이상","적격심사 / 종합심사낙찰제, 적격심사 / 종합평가낙찰제","3-4-2-2"],
+["핸드북","가격입찰 전 참가자 선별 / 가격입찰 뒤 최저가자부터 이행능력 심사","PQ / 적격심사","3-4-2-3~4"],
+["핸드북","PQ 대상: 일반공사 / 특정시설 / 교량","300억 / 200억 이상 / 경간 50m 또는 길이 500m 이상","3-4-2-3"],
+["핸드북","공사 적격심사 통과점수: 국가 100억 미만 / 지방 100억 미만 / 지방 100~300억","95 / 95 / 92","3-4-2-4"],
+["핸드북","물가변동 / 단품슬라이딩 요건","90일·3% 이상 / 순공사원가 0.5% 초과·가격 15% 이상·90일","3-4-2-5"],
+["핸드북","기술형 입찰 5단계와 평가비율 방향","기본계획 → 입찰방법 심의 → 안내서·공고 → 설계심의 → 낙찰자 선정 / 가격÷설계 낮을수록, 설계÷가격 높을수록 유리","3-4-3-2"],
+["핸드북","설계보상비 한도와 200억 공사 최대액","일괄·대안 20/1000 → 4억 / 기술제안 10/1000 → 2억","3-4-3-2"],
+["핸드북","시공평가 / 사후평가 대상 총공사비","100억 이상 / 300억 이상","3-4-3-3"],
+["핸드북","선금 / 기성·준공대가 지급 기한","청구일부터 14일 / 5일 이내","3-4-3-3"],
+["핸드북","PQ 적용 기술용역에서 입찰공고 다음 단계","PQ 참가자 선별","3-4-3-4"],
+["핸드북","기술용역 종합심사 9단계 중 4·6·8단계","필요 시 과업설명 / 가격·제안서 제출 / 기술·가격 종합심사","3-4-3-4"],
+["핸드북","확정판결·영업정지·지급보증서 미제출 vs 계약상대자가 하수급인 체불 입증","직접 지급(발주기관 → 하수급인) vs 지급 정지 가능","3-4-3-5"],
+["핸드북","하수급인 선금 배분 기한","선금 받은 날부터 15일 이내","3-4-3-5"],
+["핸드북","하도급지킴이 의무: 2천만·60일 / 5천만·20일 / 5천만·60일","× / × / ○ (3천만 미만 또는 30일 이내 제외)","3-4-3-6"],
+["모의고사","입찰보증금 / 계약보증금 / 공사이행보증서 / 지체상금 상한","5% / 10% / 40% / 30%","5회 52"],
+["모의고사","1일 지체상금률: 공사 / 물품 / 용역","0.5/1000 / 0.75/1000 / 1.25/1000","5회 76"],
+["모의고사","하자보수보증금률: 공항·항만 / 철도·댐·교량·조경 / 도로·일반건축 / 기타","4% / 5% / 3% / 2%","5회 58"],
+["모의고사","선금 최초 기준 / 총액 상한","40% / 70%","5회 53"],
+["모의고사","기한 후 납품 시 지체일수 산입 범위","기한 다음 날 ~ 검사 합격일(검사기간 포함, 발주기관 책임 지연 제외)","6회 19·76"],
+["모의고사","검사 기한 원칙과 연장","통지일부터 14일(재난 고시 7일), 100억 이상 공사는 7일 범위 연장","6회 72"],
+["모의고사","물품 소액수의 한도: 일반 / 청년창업 / 여성·장애인·소기업","2천만 / 5천만 / 1억 이하","5회 07"],
+["모의고사","우선구매 목표: 중증장애인생산품 / 장애인기업 / 여성기업(물품·용역, 공사)","1.1% / 1% / 5%, 3%","7회 07·15"],
+["모의고사","사회적기업 인증 주체와 통보 기한","고용노동부 장관 / 매년 2월 말(종합 공고 4월 30일)","5회 22·7회 02"],
+["모의고사","입찰참가자격 제한기간 상한과 재처분 가중","최대 2년 / 종료 후 6개월 내 재처분 1/2 가중(상한 2년), 담합 주도는 과징금 대체 불가","7회 18"],
+["모의고사","복수예비가격 작성 수와 산술평균 개수","15개 중 다빈도 4개","6회 12"],
+["모의고사","협상적격자 기술점수 요건(배점 90점일 때)","배점 85% 이상 → 76.5점 이상 + 예정가격(작성 시) 이하","5회 41"],
+["모의고사","협상 성립 후 계약체결 기한 / 협상기간","10일 이내 / 통보일부터 15일","5회 39"],
+["모의고사","경쟁적 대화 공고기간 / 재공고","40일 이상 / 10일 이상","5회 59"],
+["모의고사","균형가격: 유효 입찰금액 20개일 때 사용 개수","10개 (상위 40%·하위 10% 제외)","7회 53"],
+["모의고사","종합심사 동점 2순위 기준의 예외","균형가격이 예정가격의 88% 이상이면 입찰금액 낮은 자","5회 42"],
+["모의고사","100억 미만 공사 적격심사 심사 제외 기준","순공사원가(재료·노무·경비+부가세)의 98% 미만 입찰","5회 63"],
+["모의고사","종합심사 건설기술용역 기준: 기본설계 / 실시설계","30억 / 40억 이상","5회 66"],
+["모의고사","실행공정률 지연 시 시공계획서 제출 기준","10%p 이상 지연 또는 1개월 이상 중단","5회 68"],
+["모의고사","MAS 계약기간 원칙","3년","7회 70"],
+["모의고사","SOQ/TP 평가서 제출 대상 / 입찰참가적격자","수행실적 등 90점 이상 / 평가서 85점 이상","7회 71"],
+["모의고사","전자조달시스템 이용승인 제한 처벌 이력 기간","최근 3년 이내","5회 24"],
+["모의고사","지자체 조달청 공사원가 사전검토 기준","추정가격 100억 원 이상","5회 27"],
+["모의고사","벤처나라 창업기업 기준","창업 후 7년 이내","6회 10"],
+["모의고사","목록정보 품목 삭제 가능 미사용 기간","10년 이상","7회 08"],
+["모의고사","지방계약 사전공개 의견: 일반 / 계약심의위 심의대상","14일 이내 / 50일 이내 통지","5회 31·7회 36"],
+["모의고사","소액수의 배제: 불응·포기 이력","견적서 마감일 기준 최근 3개월, 해당 중앙관서 계약","7회 50"],
+["모의고사","카탈로그 용역 2천만~5천만 견적 하한(중기간 아님)","예정가격의 88% 이상","7회 61"],
+["모의고사","물품 계약수량 10% 초과 변경 요건","계약상대자 동의","7회 65"]
+];
+let K={};try{K=JSON.parse(localStorage.getItem("jodalCards")||"{}")}catch(e){}
+const save=()=>{try{localStorage.setItem("jodalCards",JSON.stringify(K))}catch(e){}};
+let list=[],pos=0,open=false;
+const $=id=>document.getElementById(id);
+function build(keepShuffle){
+  const s=$("fcSet").value,m=$("fcMode").value;
+  list=C.map((c,i)=>i).filter(i=>(s==="all"||C[i][0]===s)&&(m==="all"||K[i]!==1));
+  pos=0;show();
+}
+function show(){
+  const known=Object.values(K).filter(v=>v===1).length;
+  $("fcBar").style.width=(known/C.length*100)+"%";
+  $("fcStat").textContent=`외운 카드 ${known} / ${C.length} · 지금 목록 ${list.length}장`;
+  open=false;$("fcA").classList.add("hide");$("fcHint").classList.remove("hide");
+  if(!list.length){$("fcMeta").textContent="";$("fcQ").textContent="이 목록의 카드를 다 외웠어요 🎉";$("fcA").textContent="";return;}
+  const i=list[pos],c=C[i];
+  $("fcMeta").textContent=`${pos+1} / ${list.length} · ${c[0]} · ${c[3]}${K[i]===1?" · ✅외움":K[i]===0?" · ❌모름":""}`;
+  $("fcQ").textContent=c[1];
+  $("fcA").innerHTML="<b>정답</b>  "+c[2];
+}
+function flip(){if(!list.length)return;open=!open;$("fcA").classList.toggle("hide",!open);$("fcHint").classList.toggle("hide",open);}
+function go(d){if(!list.length)return;pos=(pos+d+list.length)%list.length;show();}
+function rate(v){if(!list.length)return;K[list[pos]]=v;save();
+  if($("fcMode").value==="no"&&v===1){list.splice(pos,1);if(pos>=list.length)pos=0;show();}else go(1);}
+$("fcCard").onclick=flip;$("fcPrev").onclick=()=>go(-1);$("fcNext").onclick=()=>go(1);
+$("fcOk").onclick=()=>rate(1);$("fcNo").onclick=()=>rate(0);
+$("fcSet").onchange=$("fcMode").onchange=()=>build();
+$("fcShuffle").onclick=()=>{for(let k=list.length-1;k>0;k--){const j=Math.floor(Math.random()*(k+1));[list[k],list[j]]=[list[j],list[k]];}pos=0;show();};
+$("fcReset").onclick=()=>{if(confirm("외움/모름 기록을 지울까요?")){K={};save();build();}};
+document.querySelectorAll(".tabs button").forEach(b=>b.onclick=()=>{
+  document.querySelectorAll(".tabs button").forEach(x=>x.classList.toggle("on",x===b));
+  ["sum","num","fc"].forEach(t=>$(t).classList.toggle("hide",t!==b.dataset.t));
+  window.scrollTo({top:0});
+});
+document.addEventListener("keydown",e=>{
+  if($("fc").classList.contains("hide"))return;
+  if(e.key===" "){e.preventDefault();flip();}
+  else if(e.key==="ArrowRight")go(1);else if(e.key==="ArrowLeft")go(-1);
+  else if(e.key==="1")rate(0);else if(e.key==="2")rate(1);
+});
+build();
+</script>
+</body>
+</html>
